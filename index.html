@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualization</title>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+<div id="main-container">
+    <div id="top-bar" class="section">
+        <div class="top-bar-item">
+            <h2>Sorting Algorithm Visualization</h2>
+        </div>
+        <div class="top-bar-item">
+            Algorithm name : <span id="algo-name"></span> Sort,
+            Delay : <span id="delay-ms"></span> ms
+        </div>
+    </div>
+    <div id="sorting-view" class="section"></div>
+    <div id="nav-bar" class="section">
+        <div class="nav-bar-item">
+            <label for="algo-options">Algorithm : </label>
+            <select id="algo-options" onchange="changeSort()"></select>
+            <label for="order-options">Order : </label>
+            <select id="order-options" onchange="changeOrder()"></select>
+            <label for="input-size">Input Size : </label>
+            <input type="number" id="input-size" name="input-size" placeholder="Enter input size" value="50"  onchange="changeInputSize()">
+            <label for="delay-input">Delay : </label>
+            <input type="number" id="delay-input" name="delay-input" placeholder="Enter delay in ms" value="50"  onchange="changeDelayTime()">
+            ms
+        </div>
+        <div class="nav-bar-item">
+            <button type="button" id="startBtn" onclick="start()">START</button>
+            <button type="button" id="resetBtn" onclick="reset()">RESET</button>
+        </div>
+    </div>
+    <audio id="sorting-sound">
+        <source src="assets/sample-sound.mp3" type="audio/mp3">
+    </audio>
+</div>
+</body>
+<script src="js/initials.js"></script>
+<script src="js/controls.js"></script>
+<script src="js/algorithms/bubble-sort.js"></script>
+<script src="js/algorithms/insertion-sort.js"></script>
+<script src="js/algorithms/selection-sort.js"></script>
+</html>

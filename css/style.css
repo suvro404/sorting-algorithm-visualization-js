@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+h2 {
+    margin: 0;
+}
+.section {
+    margin: 20px auto;
+    text-align: center;
+}
+#sorting-view {
+    margin-top: 50px;
+    width: 80vw;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+
+.bar {
+    background-color: #7CFC00;
+    border: 1px solid black;
+    margin: 1px;
+    position: relative;
+    transition: transform .2s ease-out;
+}
+.bar-title {
+    position: absolute;
+    top: -20px;
+    margin-left: -5px;
+}
+#top-bar, #sorting-view, .nav-bar-item {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+select, input {
+    margin-right: 10px;
+}
+
+#nav-bar {
+    margin-top: 50px;
+}
